@@ -1,0 +1,32 @@
+<!-- a remix of https://glitch.com/edit/#!/a-frame-mouse-click-example -->
+<!-- github: https://github.com/aframevr/aframe/blob/master/docs/components/cursor.md -->
+<html>
+  <head>
+    <title>Mouse Click Example - A-Frame</title>
+    <meta name="description" content="Mouse Click Example - A-Frame">
+    <script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-event-set-component@^4.0.0/dist/aframe-event-set-component.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-entity id="camera" camera="userHeight: 1.6" look-controls cursor="rayOrigin: mouse"></a-entity>
+
+      <a-assets>
+      <a-asset-item id="my-obj" src="https://ucarecdn.com/d9a9ad9f-69b9-4f61-bd85-3aa344fba710/"></a-asset-item>
+      <a-asset-item id="my-mtl" src="https://ucarecdn.com/be7b88c8-9e0a-469e-9af8-bdac6a1122aa/"></a-asset-item>
+    </a-assets>
+    <a-entity obj-model="obj: #my-obj; mtl: #my-mtl" position="0 2 -3" rotation="90 0 0" scale="2 2 2"
+              event-set__enter="_event: mouseenter;"
+             event-set__leave="_event: mouseleave;">
+      <a-animation attribute="rotation"
+               dur="3000"
+               fill="forwards"
+               to="-270 0 0"
+               direction="alternate"
+               begin="click"></a-animation>
+      </a-box>
+    </a-entity>
+      <a-sky color="#ECECEC"></a-sky>
+    </a-scene>
+  </body>
+</html>
