@@ -8,11 +8,13 @@ AFRAME.registerComponent('texty', {
 AFRAME.registerComponent('modely', {
   init: function () {
     var els = this.el;  
+    var sceneEl = document.querySelector('a-scene');
 	els.addEventListener('mouseenter', function () {
-			var sceneEl = document.querySelector('a-scene');
-			sceneEl.querySelector('#texty').setAttribute('value', 'fucasds');
+		sceneEl.querySelector('#texty').setAttribute('value', 'This a beutiful mahongy chair and stuff.');
+				sceneEl.querySelector('#texty').setAttribute('fook', 'fooky');
+		console.log(sceneEl.querySelector('#texty').getAttribute("fook"));  
 
-			 console.log(sceneEl.querySelector('#texty'));  
+		console.log(sceneEl.querySelector('#texty').getAttribute("value"));  
 	});
   }
 });
