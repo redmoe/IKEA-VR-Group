@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>WebVr</title>
+    <meta name="viewport" width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0>
+    <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
+    <script src="//cdn.rawgit.com/donmccurdy/aframe-physics-system/v3.0.2/dist/aframe-physics-system.min.js"></script>
+    <script src="https://unpkg.com/aframe-event-set-component@4.1.1/dist/aframe-event-set-component.min.js"></script>
+  <script src="sketch.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-assets>
+        <a-asset-item id="bus" src="assets/bus/scene.gltf"></a-asset-item>
+     <!--    <a-asset-item id="sce" src="assets/land/scene.gltf"></a-asset-item>
+        <a-asset-item id="bar" src="assets/bard/scene.gltf"></a-asset-item>
+        <a-asset-item id="buc" src="assets/bucket/scene.gltf"></a-asset-item>
+        <a-asset-item id="bus" src="assets/bus/scene.gltf"></a-asset-item>
+        <a-asset-item id="chair" src="assets/chair/scene.gltf"></a-asset-item>
+        <a-asset-item id="exportB" src="assets/exports_b/scene.gltf"></a-asset-item>   
+        <a-asset-item id="bookshelf" src="assets/four_modern_bookshelves/scene.gltf"></a-asset-item>   
+         <a-asset-item id="office_chair" src="Big_IKEA_Assets/office_chair/scene.gltf"></a-asset-item>   
+         <a-asset-item id="project_living_room" src="Big_IKEA_Assets/project_living_room/scene.gltf"></a-asset-item>     
+         <a-asset-item id="room_interior_designs" src="Big_IKEA_Assets/room_interior_designs/scene.gltf"></a-asset-item>    
+         <a-asset-item id="smart_fridge" src="Big_IKEA_Assets/smart_fridge/scene.gltf"></a-asset-item>       
+       <a-asset-item id="sofa" src="Big_IKEA_Assets/sofa/scene.gltf"> -->
+      </a-assets>
+      <a-text id="texty" value= "SUSTAINABLE" position="0 0.5 -3" wrap-count="30" color=""></a-text>
+<!--      <a-entity texty  id="texty" text="value: Hello World;" position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9"></a-entity>   -->    
+<!--       <a-entity modely id="modely" geometry="primitive:box;" position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9"></a-entity>     
+ -->      <a-entity modely gltf-model="#bus" position="-2 0 -3" scale="0.5 0.5 0.5" rotation="0 50 0"></a-entity>    
+      <a-camera>
+        <a-cursor>
+        </a-cursor>
+      </a-camera>      
+    </a-scene>
+  </body>
+</html>
