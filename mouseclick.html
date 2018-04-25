@@ -9,14 +9,23 @@
   </head>
   <body>
     <a-scene>
-      <a-entity id="camera" camera="userHeight: 1.6" look-controls cursor="rayOrigin: mouse"> <a-cursor></a-cursor></a-entity>
+    <a-entity id="camera" camera="userHeight: 1.6" look-controls cursor="rayOrigin: mouse"> <a-cursor></a-cursor></a-entity>
+	<a-assets>
+        <a-mixin id="text"
+          text="align: center; width: 1.5;
+               value: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam"
+        ></a-mixin>
+        <a-mixin id="my-obj" src="https://ucarecdn.com/d9a9ad9f-69b9-4f61-bd85-3aa344fba710/"></a-mixin>
+        <a-mixin id="my-mtl" src="https://ucarecdn.com/be7b88c8-9e0a-469e-9af8-bdac6a1122aa/"></a-mixin>       
+      </a-assets>
+    <a-text mixin="text" font="kelsonsans" position="2 2 -3" wrap-count="30" color="blue"></a-text>
 
-      <a-assets>
+      <!-- <a-assets>
       <a-asset-item id="my-obj" src="https://ucarecdn.com/d9a9ad9f-69b9-4f61-bd85-3aa344fba710/"></a-asset-item>
       <a-asset-item id="my-mtl" src="https://ucarecdn.com/be7b88c8-9e0a-469e-9af8-bdac6a1122aa/"></a-asset-item>
-    </a-assets>
+    </a-assets> -->
     <a-entity obj-model="obj: #my-obj; mtl: #my-mtl" position="0 2 -3" rotation="90 0 0" scale="2 2 2"
-              event-set__enter="_event: mouseenter;"
+             event-set__enter="_event: mouseenter;"
              event-set__leave="_event: mouseleave;">
       <a-animation attribute="rotation"
                dur="3000"
@@ -25,7 +34,7 @@
                direction="alternate"
                begin="click"></a-animation>
     </a-entity>
-      <a-sky color="#ECECEC"></a-sky>
+      <a-sky color="#FFFFFF"></a-sky>
     </a-scene>
   </body>
 </html>
