@@ -9,7 +9,7 @@
   </head>
   <body>
     <a-scene>
-      <a-entity id="camera" camera="userHeight: 1.6" look-controls cursor="rayOrigin: mouse"></a-entity>
+      <a-entity id="camera" camera="userHeight: 1.6" look-controls cursor="rayOrigin: mouse"> <a-cursor></a-cursor></a-entity>
 
       <a-assets>
       <a-asset-item id="my-obj" src="https://ucarecdn.com/d9a9ad9f-69b9-4f61-bd85-3aa344fba710/"></a-asset-item>
@@ -24,7 +24,6 @@
                to="-270 0 0"
                direction="alternate"
                begin="click"></a-animation>
-      </a-box>
     </a-entity>
       <a-sky color="#ECECEC"></a-sky>
     </a-scene>
