@@ -1,4 +1,4 @@
-var descriptions = ["This bookshelf is made of recyclable code. Environmentally friendly!- BOOKSHELF","PlaceHolder- FRIDGE","Placeholder- CHAIR","Placeholder Fourth object"];
+var descriptions = ["This bookshelf is made of recyclable code. Environmentally friendly!","PlaceHolder- FRIDGE","Placeholder- CHAIR","Placeholder Fourth object"];
 var num = 0;
 var targetEl;
 AFRAME.registerComponent('texty', {
@@ -7,7 +7,6 @@ AFRAME.registerComponent('texty', {
 
   }
 });
-// 'This bookshelf is made of recyclable code. Environmentally friendly!'
 for (var i = 0; i < descriptions.length; i++) {
 	AFRAME.registerComponent('modely'+i, {
 	  init: function () {
