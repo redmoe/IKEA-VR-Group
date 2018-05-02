@@ -1,4 +1,4 @@
-var descriptions = ["This bookshelf is made of recyclable code. Environmentally friendly!","PlaceHolder- FRIDGE","Placeholder- CHAIR","Placeholder Fourth object"];
+var descriptions = ["This bookshelf is made of recyclable code. Environmentally friendly!","This fridge consumes less electricity!","This chair is made of a special post consumer wood composite!","This sofa's cover is made from recycled plastic bottles!"];
 var num = 0;
 var targetEl;
 AFRAME.registerComponent('texty', {
