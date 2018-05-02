@@ -11,9 +11,6 @@
   <body>
     <a-scene>
       <a-assets>
-        <a-asset-item id="sce" src="assets/land/scene.gltf"></a-asset-item>
-        <a-asset-item id="bar" src="assets/bard/scene.gltf"></a-asset-item>
-        <a-asset-item id="buc" src="assets/bucket/scene.gltf"></a-asset-item>
         <a-asset-item id="bus" src="assets/bus/scene.gltf"></a-asset-item>
         <a-asset-item id="chair" src="assets/chair/scene.gltf"></a-asset-item>
         <a-asset-item id="exportB" src="assets/exports_b/scene.gltf"></a-asset-item>   
@@ -23,10 +20,15 @@
          <a-asset-item id="room_interior_designs" src="Big_IKEA_Assets/room_interior_designs/scene.gltf"></a-asset-item>    
          <a-asset-item id="smart_fridge" src="Big_IKEA_Assets/smart_fridge/scene.gltf"></a-asset-item>       
        <a-asset-item id="sofa" src="Big_IKEA_Assets/sofa/scene.gltf">
-       </a-asset-item>
-
-        
       </a-assets>
+        <a-entity gltf-model="#chair"></a-entity>
+        <a-entity gltf-model="#exportB"></a-entity>
+        <a-entity gltf-model="#bookshelf"></a-entity>
+        <a-entity gltf-model="#office_shair"></a-entity>
+        <a-entity gltf-model="#project_living_room"></a-entity>
+        <a-entity gltf-model="#sofa"></a-entity>
+        <a-entity gltf-model="#smart_fridge></a-entity>
+
            <a-plane position="0 -4 0" rotation="-90 0 0" width="100" height="100" color="#acba13"></a-plane>
  
       <a-text id="texty" color= "#000000" value= ""></a-text>
