@@ -11,14 +11,14 @@
   <body>
     <a-scene>
       <a-assets>
-     <!--    <a-asset-item id="sce" src="assets/land/scene.gltf"></a-asset-item>
+<!--         <a-asset-item id="sce" src="assets/land/scene.gltf"></a-asset-item>
         <a-asset-item id="bar" src="assets/bard/scene.gltf"></a-asset-item>
         <a-asset-item id="buc" src="assets/bucket/scene.gltf"></a-asset-item>
         <a-asset-item id="bus" src="assets/bus/scene.gltf"></a-asset-item>
         <a-asset-item id="chair" src="assets/chair/scene.gltf"></a-asset-item>
-        <a-asset-item id="exportB" src="assets/exports_b/scene.gltf"></a-asset-item>   
+        <a-asset-item id="exportB" src="assets/exports_b/scene.gltf"></a-asset-item>    -->
         <a-asset-item id="bookshelf" src="assets/four_modern_bookshelves/scene.gltf"></a-asset-item>   
-         <a-asset-item id="office_chair" src="Big_IKEA_Assets/office_chair/scene.gltf"></a-asset-item>   
+<!--          <a-asset-item id="office_chair" src="Big_IKEA_Assets/office_chair/scene.gltf"></a-asset-item>   
          <a-asset-item id="project_living_room" src="Big_IKEA_Assets/project_living_room/scene.gltf"></a-asset-item>     
          <a-asset-item id="room_interior_designs" src="Big_IKEA_Assets/room_interior_designs/scene.gltf"></a-asset-item>    
          <a-asset-item id="smart_fridge" src="Big_IKEA_Assets/smart_fridge/scene.gltf"></a-asset-item>       
@@ -27,9 +27,11 @@
 
         
       </a-assets>
-      <a-text id="texty" value= "Hello World"></a-text>
+           <a-plane position="0 -4 0" rotation="-90 0 0" width="100" height="100" color="#acba13"></a-plane>
+ 
+      <a-text id="texty" color= "#000000" value= ""></a-text>
 <!--      <a-entity texty  id="texty" text="value: Hello World;" position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9"></a-entity>   -->    
-      <a-entity modely id="modely" geometry="primitive:box;" position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9"></a-entity>         
+      <a-entity modely id="modely" gltf-model= "#bookshelf" position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9"></a-entity>         
       <a-camera>
         <a-cursor>
         </a-cursor>
