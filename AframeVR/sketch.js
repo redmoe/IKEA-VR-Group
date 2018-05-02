@@ -1,4 +1,4 @@
-var descriptions = ["This bookshelf is made of recyclable code. Environmentally friendly!","Hey look at me!","Third Wave","Fourth Message"];
+var descriptions = ["This bookshelf is made of recyclable code. Environmentally friendly!- BOOKSHELF","PlaceHolder- FRIDGE","Placeholder- CHAIR","Placeholder Fourth object"];
 var num = 0;
 var targetEl;
 AFRAME.registerComponent('texty', {
